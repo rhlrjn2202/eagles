@@ -9,10 +9,18 @@ const Footer = () => {
         <div className="px-4 py-12 grid md:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div>
-            <h3 className="text-xl font-bold mb-4">
-              <span className="text-white">EAGLES</span>
-              <span className="text-yellow-400">CC</span>
-            </h3>
+            <div className="mb-4">
+              <div className="w-20 h-20 bg-yellow-400 rounded-lg flex items-center justify-center mb-3">
+                <img
+                  src="/images/eagle-logo.png"
+                  alt="Eagles Cricket Club"
+                  className="w-16 h-16 object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold">
+                <span className="text-white">EAGLES</span>
+              </h3>
+            </div>
             <p className="text-gray-400 text-sm">Soaring High, Playing Strong</p>
             <div className="mt-6 flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
