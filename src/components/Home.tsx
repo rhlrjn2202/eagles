@@ -72,6 +72,13 @@ const Home = () => {
     { value: "50+", label: "Youth Players" }
   ];
 
+  const sponsors = [
+    { name: "Emirates", logo: "/images/sponsor/logo.1.jpg" },
+    { name: "Adidas", logo: "/images/sponsor/logo.2.jpg" },
+    { name: "Nike", logo: "/images/sponsor/logo.3.jpg" },
+    { name: "Puma", logo: "/images/sponsor/logo.4.jpg" }
+  ];
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -86,7 +93,7 @@ const Home = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 w-full py-20">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg uppercase">
             Welcome to<br />Eagles Cricket Club
           </h1>
           <p className="text-xl text-gray-100 mb-8 max-w-2xl drop-shadow">
@@ -114,7 +121,7 @@ const Home = () => {
                 <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">
                   {stat.value}
                 </div>
-                <div className="text-gray-600">{stat.label}</div>
+                <div className="text-gray-600 uppercase">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -125,22 +132,22 @@ const Home = () => {
       <section className="py-16 bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
+            <h2 className="text-3xl font-bold mb-4 uppercase">OUR VISION</h2>
             <div className="max-w-3xl mx-auto space-y-6">
               <p className="text-xl text-gray-700 leading-relaxed">
                 To be the leading cricket club that nurtures talent, promotes sportsmanship, and creates champions who inspire the next generation of cricketers.
               </p>
               <div className="grid md:grid-cols-3 gap-6 mt-12">
                 <div className="p-6 bg-white rounded-xl shadow-sm">
-                  <h3 className="text-lg font-semibold mb-3 text-blue-600">Excellence</h3>
+                  <h3 className="text-lg font-semibold mb-3 text-blue-600 uppercase">Excellence</h3>
                   <p className="text-gray-600">Striving for the highest standards in cricket and personal development</p>
                 </div>
                 <div className="p-6 bg-white rounded-xl shadow-sm">
-                  <h3 className="text-lg font-semibold mb-3 text-blue-600">Community</h3>
+                  <h3 className="text-lg font-semibold mb-3 text-blue-600 uppercase">Community</h3>
                   <p className="text-gray-600">Building a strong cricket family that supports and uplifts each other</p>
                 </div>
                 <div className="p-6 bg-white rounded-xl shadow-sm">
-                  <h3 className="text-lg font-semibold mb-3 text-blue-600">Development</h3>
+                  <h3 className="text-lg font-semibold mb-3 text-blue-600 uppercase">Development</h3>
                   <p className="text-gray-600">Continuous learning and growth for players of all levels</p>
                 </div>
               </div>
@@ -153,7 +160,7 @@ const Home = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Upcoming Matches</h2>
+            <h2 className="text-3xl font-bold mb-4 uppercase">UPCOMING MATCHES</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Support our team in these upcoming fixtures.
             </p>
@@ -188,7 +195,7 @@ const Home = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Latest News</h2>
+            <h2 className="text-3xl font-bold mb-4 uppercase">LATEST NEWS</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Stay updated with the latest happenings at Eagles Cricket Club.
             </p>
@@ -213,7 +220,7 @@ const Home = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Video Gallery</h2>
+            <h2 className="text-3xl font-bold mb-4 uppercase">VIDEO GALLERY</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Relive our memorable moments and experiences through these videos.
             </p>
@@ -250,7 +257,7 @@ const Home = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Image Gallery</h2>
+            <h2 className="text-3xl font-bold mb-4 uppercase">IMAGE GALLERY</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Capturing the spirit and excitement of Eagles Cricket Club.
             </p>
@@ -287,15 +294,19 @@ const Home = () => {
       <section className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Sponsors</h2>
+            <h2 className="text-3xl font-bold mb-4 uppercase">OUR SPONSORS</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Proud partners who support our journey in cricket.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-            {[1, 2, 3, 4].map((sponsor) => (
-              <div key={sponsor} className="w-32 h-32 bg-white rounded-lg shadow-sm flex items-center justify-center">
-                <span className="text-gray-400">Sponsor {sponsor}</span>
+            {sponsors.map((sponsor, index) => (
+              <div key={index} className="w-48 h-32 bg-white rounded-lg shadow-sm flex items-center justify-center p-4">
+                <img
+                  src={sponsor.logo}
+                  alt={`${sponsor.name} logo`}
+                  className="max-w-full max-h-full object-contain"
+                />
               </div>
             ))}
           </div>
@@ -305,8 +316,8 @@ const Home = () => {
       {/* CTA Section */}
       <section className="py-16 bg-blue-600">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
-            Ready to Join Eagles Cricket Club?
+          <h2 className="text-3xl font-bold text-white mb-6 uppercase">
+            READY TO JOIN EAGLES CRICKET CLUB?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Be part of our cricket family and start your journey towards excellence.
