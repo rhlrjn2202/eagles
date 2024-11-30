@@ -47,3 +47,29 @@
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
+
+/* Swiper custom styles */
+.player-gallery-swiper {
+  padding: 20px 40px !important;
+}
+
+.player-gallery-swiper .swiper-button-next,
+.player-gallery-swiper .swiper-button-prev {
+  color: #2563eb;
+  background: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.player-gallery-swiper .swiper-button-next::after,
+.player-gallery-swiper .swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.player-gallery-swiper .swiper-button-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}

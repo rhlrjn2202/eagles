@@ -7,6 +7,17 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
+  const menuItems = [
+    { name: 'HOME', path: '/' },
+    { name: 'ABOUT', path: '/about' },
+    { name: 'PROGRAMS', path: '/programs' },
+    { name: 'TEAM', path: '/team' },
+    { name: 'MATCHES', path: '/matches' },
+    { name: 'GALLERY', path: '/gallery' },
+    { name: 'ACHIEVEMENTS', path: '/achievements' },
+    { name: 'CONTACT', path: '/contact' },
+  ];
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       {/* Main Navigation */}
@@ -20,16 +31,7 @@ const Navbar = () => {
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center space-x-1">
-              {[
-                { name: 'Home', path: '/' },
-                { name: 'About', path: '/about' },
-                { name: 'Programs', path: '/programs' },
-                { name: 'Team', path: '/team' },
-                { name: 'Matches', path: '/matches' },
-                { name: 'Gallery', path: '/gallery' },
-                { name: 'Achievements', path: '/achievements' },
-                { name: 'Contact', path: '/contact' },
-              ].map((item) => (
+              {menuItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}
@@ -41,7 +43,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <button className="ml-4 bg-yellow-500 text-[#0E1624] px-6 py-2 rounded font-medium hover:bg-yellow-400 transition-colors">
-                Register Now
+                REGISTER NOW
               </button>
             </div>
 
@@ -59,16 +61,7 @@ const Navbar = () => {
           {/* Mobile Menu */}
           {isOpen && (
             <div className="lg:hidden pb-6">
-              {[
-                { name: 'Home', path: '/' },
-                { name: 'About', path: '/about' },
-                { name: 'Programs', path: '/programs' },
-                { name: 'Team', path: '/team' },
-                { name: 'Matches', path: '/matches' },
-                { name: 'Gallery', path: '/gallery' },
-                { name: 'Achievements', path: '/achievements' },
-                { name: 'Contact', path: '/contact' },
-              ].map((item) => (
+              {menuItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}
@@ -80,7 +73,7 @@ const Navbar = () => {
               ))}
               <div className="px-4 mt-4">
                 <button className="w-full bg-yellow-500 text-[#0E1624] px-6 py-2 rounded font-medium hover:bg-yellow-400 transition-colors">
-                  Register Now
+                  REGISTER NOW
                 </button>
               </div>
             </div>
