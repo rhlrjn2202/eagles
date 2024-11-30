@@ -1,4 +1,4 @@
-import { Trophy, Users, Calendar, ArrowRight, Star, Play, ChevronRight } from 'lucide-react';
+import { ArrowRight, Play, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 
 const Home = () => {
