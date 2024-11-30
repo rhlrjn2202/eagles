@@ -74,14 +74,15 @@ const Home = () => {
 
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="relative h-[80vh] min-h-[600px] flex items-center">
+      {/* Hero Section - Removed margin-top and adjusted height */}
+      <section className="relative h-[80vh] min-h-[600px] flex items-center -mt-16">
         <div className="absolute inset-0">
           <img
             src="/images/hero-cricket.jpg"
             alt="Cricket Ground"
             className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-black/30"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 w-full">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
