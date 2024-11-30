@@ -29,6 +29,7 @@ const Navbar = () => {
                 { name: 'Team', path: '/team' },
                 { name: 'Matches', path: '/matches' },
                 { name: 'Gallery', path: '/gallery' },
+                { name: 'Achievements', path: '/achievements' },
                 { name: 'Contact', path: '/contact' },
               ].map((item) => (
                 <Link
@@ -67,6 +68,7 @@ const Navbar = () => {
                 { name: 'Team', path: '/team' },
                 { name: 'Matches', path: '/matches' },
                 { name: 'Gallery', path: '/gallery' },
+                { name: 'Achievements', path: '/achievements' },
                 { name: 'Contact', path: '/contact' },
               ].map((item) => (
                 <Link
