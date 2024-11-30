@@ -7,11 +7,13 @@ import Gallery from './components/Gallery';
 import Achievements from './components/Achievements';
 import Footer from './components/Footer';
 import ErrorBoundary from './components/ErrorBoundary';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
       <ErrorBoundary>
+        <ScrollToTop />
         <div className="min-h-screen flex flex-col bg-slate-50">
           <Navbar />
           <main className="flex-grow pt-16">
