@@ -6,7 +6,7 @@ const Logo = () => {
           <img
             src="/images/eagle-logo.png"
             alt="Eagles Cricket Club"
-            className="w-20 h-20 object-contain p-2"
+            className="w-16 h-16 object-contain"
           />
         </div>
       </div>
