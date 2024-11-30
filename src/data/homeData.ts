@@ -68,7 +68,7 @@ export const upcomingMatches = [
   ];
   
   export const sponsors = [
-    { name: "Emirates", logo: "/images/sponsor/logo.1.jpg" },
+    { name: "Emirates", logo: "/images/sponsor/logo1.png" },
     { name: "Adidas", logo: "/images/sponsor/logo.2.jpg" },
     { name: "Nike", logo: "/images/sponsor/logo.3.jpg" },
     { name: "Puma", logo: "/images/sponsor/logo.4.jpg" }
