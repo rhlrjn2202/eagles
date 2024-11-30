@@ -82,13 +82,12 @@ const Home = () => {
             alt="Cricket Ground"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 w-full">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
             Welcome to<br />Eagles Cricket Club
           </h1>
-          <p className="text-xl text-gray-200 mb-8 max-w-2xl">
+          <p className="text-xl text-gray-100 mb-8 max-w-2xl drop-shadow">
             Join us in our journey of cricket excellence. Develop your skills, compete at high levels, and be part of our winning legacy.
           </p>
           <div className="flex flex-wrap gap-4">
@@ -96,7 +95,7 @@ const Home = () => {
               Join the Club
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
-            <button className="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-6 py-3 rounded-lg font-medium inline-flex items-center">
+            <button className="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-6 py-3 rounded-lg font-medium inline-flex items-center backdrop-blur-sm">
               Watch Video
               <Play className="ml-2 h-5 w-5" />
             </button>
