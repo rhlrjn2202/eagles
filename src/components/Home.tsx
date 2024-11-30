@@ -20,27 +20,44 @@ const Home = () => {
     }
   ];
 
+  const testimonials = [
+    {
+      name: "Alex Thompson",
+      role: "Junior Player",
+      content: "The coaching here transformed my game completely. The attention to detail is amazing."
+    },
+    {
+      name: "Sarah Williams",
+      role: "Parent",
+      content: "My son has grown so much in confidence since joining the Eagles junior program."
+    },
+    {
+      name: "Michael Chen",
+      role: "Senior Player",
+      content: "The professional environment and world-class facilities make this club stand out."
+    }
+  ];
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <div className="relative min-h-screen flex items-center pt-20">
-        {/* Background Image */}
         <div className="absolute inset-0">
           <div 
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: 'url("/images/hero-cricket.jpg")' }}
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent"></div>
           </div>
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 py-32">
           <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight [text-shadow:_0_1px_12px_rgb(0_0_0_/_40%)]">
               Unleash Your
               <span className="block text-blue-400">Cricket Potential</span>
             </h1>
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-xl text-gray-100 mb-8 [text-shadow:_0_1px_8px_rgb(0_0_0_/_40%)]">
               Join the most prestigious cricket club that transforms passionate players into champions through professional coaching and world-class facilities.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -152,147 +169,42 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Achievements Preview Section */}
+      {/* Testimonials Section */}
       <div className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Recent Achievements</h2>
+            <h2 className="text-3xl font-bold mb-4">What Our Members Say</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Celebrating our success stories and milestones.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            {[
-              {
-                title: "City League Champions",
-                year: "2023",
-                description: "Dominated the season with 12 consecutive wins"
-              },
-              {
-                title: "Regional Cup Winners",
-                year: "2022",
-                description: "Defeated 16 teams to claim the prestigious trophy"
-              },
-              {
-                title: "Junior Development Award",
-                year: "2023",
-                description: "Recognized for excellence in youth cricket development"
-              }
-            ].map((achievement, index) => (
-              <div key={index} className="card p-6 text-center">
-                <div className="inline-block p-4 bg-blue-50 rounded-full mb-4">
-                  <Trophy className="w-8 h-8 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{achievement.title}</h3>
-                <p className="text-blue-600 font-medium mb-2">{achievement.year}</p>
-                <p className="text-gray-600">{achievement.description}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center">
-            <Link to="/achievements" className="btn-secondary">
-              View All Achievements <ExternalLink className="ml-2 h-4 w-4" />
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* Upcoming Matches Section */}
-      <div className="bg-white py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Upcoming Matches</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Support our team in upcoming tournaments and league matches.
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            {[
-              {
-                date: "Mar 25",
-                teams: "Eagles CC vs Lions XI",
-                venue: "Central Stadium",
-                time: "2:00 PM"
-              },
-              {
-                date: "Apr 02",
-                teams: "Eagles CC vs Thunder Kings",
-                venue: "Sports Complex",
-                time: "3:30 PM"
-              },
-              {
-                date: "Apr 15",
-                teams: "Eagles CC vs Royal Strikers",
-                venue: "City Ground",
-                time: "1:00 PM"
-              }
-            ].map((match, index) => (
-              <div key={index} className="card p-6">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                  <div className="flex items-center space-x-6">
-                    <div className="text-center">
-                      <div className="text-lg font-semibold text-blue-600">{match.date}</div>
-                      <div className="text-sm text-gray-500">{match.time}</div>
-                    </div>
-                    <div>
-                      <div className="font-semibold">{match.teams}</div>
-                      <div className="text-sm text-gray-600">{match.venue}</div>
-                    </div>
-                  </div>
-                  <button className="mt-4 md:mt-0 btn-secondary">
-                    View Details
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* News & Updates Section */}
-      <div className="bg-gray-50 py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Latest News</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Stay updated with the latest happenings at Eagles Cricket Club.
+              Hear from our members about their experience at Eagles Cricket Club.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "New Training Facility Inauguration",
-                date: "March 15, 2024",
-                excerpt: "State-of-the-art indoor training facility now open for members"
-              },
-              {
-                title: "Junior Team Wins Regional Championship",
-                date: "March 10, 2024",
-                excerpt: "Our U-15 team emerges victorious in the regional tournament"
-              },
-              {
-                title: "Summer Camp Registration Open",
-                date: "March 5, 2024",
-                excerpt: "Register now for our intensive summer training camp"
-              }
-            ].map((news, index) => (
-              <div key={index} className="card overflow-hidden">
-                <div className="h-48 bg-gray-200"></div>
-                <div className="p-6">
-                  <div className="text-sm text-gray-500 mb-2">{news.date}</div>
-                  <h3 className="text-xl font-semibold mb-2">{news.title}</h3>
-                  <p className="text-gray-600 mb-4">{news.excerpt}</p>
-                  <button className="text-blue-600 font-medium hover:text-blue-700">
-                    Read More
-                  </button>
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="card p-6">
+                <p className="text-gray-600 mb-4">{testimonial.content}</p>
+                <div className="border-t pt-4">
+                  <p className="font-semibold">{testimonial.name}</p>
+                  <p className="text-sm text-gray-500">{testimonial.role}</p>
                 </div>
               </div>
             ))}
           </div>
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <div className="bg-blue-600 py-16">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Ready to Join Eagles Cricket Club?
+          </h2>
+          <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
+            Take the first step towards cricket excellence. Join our community of passionate cricketers.
+          </p>
+          <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors">
+            Register Now
+          </button>
         </div>
       </div>
     </div>
