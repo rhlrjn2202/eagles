@@ -92,7 +92,7 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-6">Our Team Colors</h3>
               <div className="relative w-full max-w-md mx-auto">
                 <img
-                  src="/images/jersey.png"
+                  src="/images/jersey-1.png"
                   alt="Eagles Cricket Club Jersey"
                   className="w-full h-auto rounded-lg shadow-xl"
                 />

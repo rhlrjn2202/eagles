@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       {/* Main Navigation */}
-      <nav className="bg-[#0E1624] text-white">
+      <nav className="bg-[#19398a] text-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
