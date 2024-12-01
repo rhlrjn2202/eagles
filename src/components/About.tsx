@@ -155,7 +155,7 @@ const About = () => {
       </section>
 
       {/* Future Vision */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-[#19398a] text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Looking Forward</h2>
           <p className="text-xl text-blue-100 leading-relaxed">

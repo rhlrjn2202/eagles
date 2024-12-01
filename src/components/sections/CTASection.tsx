@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const CTASection = () => {
   return (
-    <section className="py-16 bg-blue-600">
+    <section className="py-16 bg-[#19398a]">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-6 uppercase">
           READY TO JOIN EAGLES CRICKET CLUB?
