@@ -1,7 +1,11 @@
 import { ArrowRight, Play } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import VideoModal from '../VideoModal';
 
 const HeroSection = () => {
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+
   return (
     <section className="relative min-h-[calc(100vh-4rem)] flex items-center">
       <div className="absolute inset-0">
@@ -25,12 +29,19 @@ const HeroSection = () => {
             Join the Club
             <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
-          <button className="bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-lg font-medium inline-flex items-center backdrop-blur-sm transition-all duration-200">
+          <button 
+            onClick={() => setIsVideoModalOpen(true)}
+            className="bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-lg font-medium inline-flex items-center backdrop-blur-sm transition-all duration-200"
+          >
             Watch Video
             <Play className="ml-2 h-5 w-5" />
           </button>
         </div>
       </div>
+      <VideoModal 
+        isOpen={isVideoModalOpen}
+        onClose={() => setIsVideoModalOpen(false)}
+      />
     </section>
   );
 };
