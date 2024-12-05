@@ -48,12 +48,12 @@ const Team = () => {
     // Bowlers
     {
       id: 2,
-      name: "Mitchell Starc",
-      role: "Left-arm Fast",
+      name: "Sharu",
+      role: "Right-arm Fast",
       category: "BOWLERS",
-      number: "56",
+      number: "18",
       nationality: "Australia",
-      image: "https://via.placeholder.com/300",
+      image: "/images/team/sharu.jpg",
       stats: {
         matches: 95,
         wickets: 145,
@@ -63,12 +63,12 @@ const Team = () => {
     },
     {
       id: 3,
-      name: "Dale Turner",
+      name: "Renju",
       role: "Right-arm Fast",
       category: "BOWLERS",
-      number: "90",
+      number: "12",
       nationality: "South Africa",
-      image: "https://via.placeholder.com/300",
+      image: "/images/team/renju.jpg",
       stats: {
         matches: 85,
         wickets: 120,
@@ -78,12 +78,12 @@ const Team = () => {
     },
     {
       id: 4,
-      name: "Rashid Khan",
-      role: "Leg Spinner",
+      name: "Rahul Ji",
+      role: "Right-arm Medium",
       category: "BOWLERS",
-      number: "19",
+      number: "04",
       nationality: "Afghanistan",
-      image: "https://via.placeholder.com/300",
+      image: "/images/team/rahul.jpg",
       stats: {
         matches: 100,
         wickets: 160,
@@ -93,12 +93,12 @@ const Team = () => {
     },
     {
       id: 5,
-      name: "Nathan Lyon",
+      name: "Prasad",
       role: "Off Spinner",
       category: "BOWLERS",
-      number: "67",
+      number: "07",
       nationality: "Australia",
-      image: "https://via.placeholder.com/300",
+      image: "/images/team/prasad.jpg",
       stats: {
         matches: 90,
         wickets: 130,
@@ -173,12 +173,12 @@ const Team = () => {
     },
     {
       id: 10,
-      name: "Babar Azam",
+      name: "Vipin",
       role: "Right-hand Batsman",
       category: "BATTERS",
-      number: "56",
+      number: "7",
       nationality: "Pakistan",
-      image: "https://via.placeholder.com/300",
+      image: "/images/team/vipin.jpg",
       stats: {
         matches: 105,
         runs: 4300,
@@ -189,12 +189,12 @@ const Team = () => {
     },
     {
       id: 11,
-      name: "Rohit Sharma",
+      name: "Anoop",
       role: "Right-hand Batsman",
       category: "BATTERS",
-      number: "45",
+      number: "333",
       nationality: "India",
-      image: "https://via.placeholder.com/300",
+      image: "/images/team/anoop.jpg",
       stats: {
         matches: 130,
         runs: 4900,
@@ -205,12 +205,12 @@ const Team = () => {
     },
     {
       id: 12,
-      name: "Ross Taylor",
+      name: "Micah",
       role: "Right-hand Batsman",
       category: "BATTERS",
-      number: "88",
+      number: "27",
       nationality: "New Zealand",
-      image: "https://via.placeholder.com/300",
+      image: "/images/team/micah.jpg",
       stats: {
         matches: 118,
         runs: 4400,
@@ -221,12 +221,28 @@ const Team = () => {
     },
     {
       id: 13,
-      name: "Quinton de Kock",
+      name: "Manoj RS",
       role: "Left-hand Batsman",
       category: "BATTERS",
-      number: "12",
+      number: "4",
       nationality: "South Africa",
-      image: "https://via.placeholder.com/300",
+      image: "/images/team/manoj.jpg",
+      stats: {
+        matches: 112,
+        runs: 4150,
+        average: 41.2,
+        strikeRate: 136.8
+      },
+      achievements: ["Best Wicketkeeper Batsman 2023"]
+    },
+    {
+      id: 14,
+      name: "Britto",
+      role: "Left-hand Batsman",
+      category: "BATTERS",
+      number: "1",
+      nationality: "South Africa",
+      image: "/images/team/britto.jpg",
       stats: {
         matches: 112,
         runs: 4150,
@@ -238,12 +254,12 @@ const Team = () => {
     // All-Rounders
     {
       id: 14,
-      name: "Ben Stokes",
+      name: "John Miller",
       role: "All-Rounder",
       category: "ALL-ROUNDERS",
-      number: "55",
+      number: "01",
       nationality: "England",
-      image: "https://via.placeholder.com/300",
+      image: "/images/team/john_miller.jpg",
       stats: {
         matches: 110,
         runs: 3200,
@@ -255,12 +271,12 @@ const Team = () => {
     },
     {
       id: 15,
-      name: "Shakib Al Hasan",
+      name: "Dipu",
       role: "All-Rounder",
       category: "ALL-ROUNDERS",
-      number: "75",
+      number: "007",
       nationality: "Bangladesh",
-      image: "https://via.placeholder.com/300",
+      image: "/images/team/dipu.jpg",
       stats: {
         matches: 115,
         runs: 3400,
@@ -272,12 +288,12 @@ const Team = () => {
     },
     {
       id: 16,
-      name: "Marcus Stoinis",
+      name: "Sarath",
       role: "All-Rounder",
       category: "ALL-ROUNDERS",
-      number: "23",
+      number: "6",
       nationality: "Australia",
-      image: "https://via.placeholder.com/300",
+      image: "/images/team/sarath.jpg",
       stats: {
         matches: 95,
         runs: 2800,
@@ -289,12 +305,12 @@ const Team = () => {
     },
     {
       id: 17,
-      name: "Hardik Pandya",
+      name: "Ajin",
       role: "All-Rounder",
       category: "ALL-ROUNDERS",
-      number: "33",
+      number: "0",
       nationality: "India",
-      image: "https://via.placeholder.com/300",
+      image: "/images/team/ajin.jpg",
       stats: {
         matches: 100,
         runs: 2900,
@@ -303,6 +319,58 @@ const Team = () => {
         economy: 6.9
       },
       achievements: ["Most Match-winning Performances 2023"]
+    },
+    // New All-Rounders
+    {
+      id: 18,
+      name: "Akash",
+      role: "All-Rounder",
+      category: "ALL-ROUNDERS",
+      number: "12",
+      nationality: "England",
+      image: "/images/team/akash.jpg",
+      stats: {
+        matches: 105,
+        runs: 3100,
+        wickets: 90,
+        average: 37.5,
+        economy: 6.7
+      },
+      achievements: ["Best Bowling All-Rounder 2023"]
+    },
+    {
+      id: 19,
+      name: "Aneesh",
+      role: "All-Rounder",
+      category: "ALL-ROUNDERS",
+      number: "143",
+      nationality: "India",
+      image: "/images/team/aneesh.jpg",
+      stats: {
+        matches: 120,
+        runs: 3500,
+        wickets: 110,
+        average: 39.2,
+        economy: 6.3
+      },
+      achievements: ["Best Fielding All-Rounder 2023"]
+    },
+    {
+      id: 20,
+      name: "Pradeep",
+      role: "All-Rounder",
+      category: "ALL-ROUNDERS",
+      number: "2",
+      nationality: "Australia",
+      image: "/images/team/pradeep.jpg",
+      stats: {
+        matches: 110,
+        runs: 3300,
+        wickets: 85,
+        average: 36.8,
+        economy: 7.0
+      },
+      achievements: ["Most Explosive All-Rounder 2023"]
     }
   ];
 
