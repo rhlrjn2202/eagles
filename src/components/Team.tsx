@@ -34,7 +34,7 @@ const Team = () => {
       role: "Right-hand Batsman",
       category: "BATTERS",
       isCaptain: true,
-      number: "45",
+      number: "37",
       nationality: "England",
       image: "/images/team/ajeesh.jpg",
       stats: {
@@ -109,12 +109,12 @@ const Team = () => {
     // Batters
     {
       id: 6,
-      name: "Steve Smith",
+      name: "Albin Das",
       role: "Right-hand Batsman",
       category: "BATTERS",
-      number: "49",
+      number: "03",
       nationality: "Australia",
-      image: "https://via.placeholder.com/300",
+      image: "/images/team/alby.jpg",
       stats: {
         matches: 120,
         runs: 4800,
@@ -125,12 +125,12 @@ const Team = () => {
     },
     {
       id: 7,
-      name: "Kane Williamson",
-      role: "Right-hand Batsman",
+      name: "Pramod",
+      role: "Left-hand Batsman",
       category: "BATTERS",
-      number: "22",
+      number: "10",
       nationality: "New Zealand",
-      image: "https://via.placeholder.com/300",
+      image: "/images/team/pramod.jpg",
       stats: {
         matches: 110,
         runs: 4200,
@@ -141,12 +141,12 @@ const Team = () => {
     },
     {
       id: 8,
-      name: "David Warner",
-      role: "Left-hand Batsman",
+      name: "Jithu",
+      role: "Right-hand Batsman",
       category: "BATTERS",
-      number: "31",
+      number: "25",
       nationality: "Australia",
-      image: "https://via.placeholder.com/300",
+      image: "/images/team/jithu.jpg",
       stats: {
         matches: 125,
         runs: 4600,
@@ -157,12 +157,12 @@ const Team = () => {
     },
     {
       id: 9,
-      name: "Joe Root",
+      name: "Vishnu Vijayakumar",
       role: "Right-hand Batsman",
       category: "BATTERS",
-      number: "66",
+      number: "01",
       nationality: "England",
-      image: "https://via.placeholder.com/300",
+      image: "/images/team/vishnu.jpg",
       stats: {
         matches: 115,
         runs: 4100,
