@@ -306,7 +306,7 @@ const Team = () => {
     }
   ];
 
-  const categories: PlayerCategory[] = ['ALL', 'BATTERS', 'ALL-ROUNDERS', 'BOWLERS'];
+  const categories: PlayerCategory[] = ['ALL', 'BATTERS', 'BOWLERS', 'ALL-ROUNDERS'];
 
   const filteredPlayers = activeCategory === 'ALL' 
     ? players 
@@ -458,18 +458,18 @@ const Team = () => {
                 icon={Star}
               />
             )}
-            {bowlers.length > 0 && (
-              <TeamSection
-                title="Bowlers"
-                players={bowlers}
-                icon={Trophy}
-              />
-            )}
             {batters.length > 0 && (
               <TeamSection
                 title="Batters"
                 players={batters}
                 icon={Star}
+              />
+            )}
+            {bowlers.length > 0 && (
+              <TeamSection
+                title="Bowlers"
+                players={bowlers}
+                icon={Trophy}
               />
             )}
             {allRounders.length > 0 && (
