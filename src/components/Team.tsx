@@ -30,13 +30,13 @@ const Team = () => {
     // Captain
     {
       id: 1,
-      name: "James Anderson",
+      name: "Ajeesh Mathew",
       role: "Right-hand Batsman",
       category: "BATTERS",
       isCaptain: true,
       number: "45",
       nationality: "England",
-      image: "/images/jersey-1.png",
+      image: "/images/team/ajeesh.jpg",
       stats: {
         matches: 150,
         runs: 5500,
