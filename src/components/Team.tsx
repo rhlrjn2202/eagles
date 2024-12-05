@@ -36,7 +36,7 @@ const Team = () => {
       isCaptain: true,
       number: "45",
       nationality: "England",
-      image: "https://via.placeholder.com/300",
+      image: "/images/jersey-1.png",
       stats: {
         matches: 150,
         runs: 5500,
