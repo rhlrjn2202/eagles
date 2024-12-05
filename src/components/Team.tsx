@@ -326,17 +326,18 @@ const Team = () => {
           alt={player.name}
           className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-        <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white">
-          <div className="flex items-center gap-2 mb-1">
-            <h3 className="text-xl sm:text-2xl font-bold">{player.name}</h3>
-            {player.isCaptain && (
-              <span className="bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded">
-                CAPTAIN
-              </span>
-            )}
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent h-24">
+          <div className="p-4 sm:p-6 text-white">
+            <div className="flex items-center gap-2 mb-1">
+              <h3 className="text-xl sm:text-2xl font-bold">{player.name}</h3>
+              {player.isCaptain && (
+                <span className="bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded">
+                  CAPTAIN
+                </span>
+              )}
+            </div>
+            <p className="text-sm opacity-90">{player.role}</p>
           </div>
-          <p className="text-sm opacity-90">{player.role}</p>
         </div>
         <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-blue-600 font-bold px-3 py-1 rounded">
           #{player.number}
