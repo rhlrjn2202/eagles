@@ -144,7 +144,7 @@ const PlayerGallery = () => {
         </div>
         <Swiper
           modules={[Navigation, Autoplay]}
-          spaceBetween={24}
+          spaceBetween={12}
           slidesPerView={1}
           navigation
           autoplay={{ delay: 5000, disableOnInteraction: false }}
@@ -162,9 +162,9 @@ const PlayerGallery = () => {
                   <img
                     src={player.image}
                     alt={player.name}
-                    className="w-full h-80 object-cover"
+                    className="w-full h-96 object-cover"
                   />
-                  <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent p-4" />
+                  <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent" />
                   <div className="absolute bottom-0 left-0 w-full p-4">
                     <h3 className="text-xl font-semibold text-white">{player.name}</h3>
                     <p className="text-blue-300 font-medium text-sm">{player.role}</p>
